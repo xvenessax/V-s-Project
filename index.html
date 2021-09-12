@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-        <title><marquee>It's V</marquee></title>
+        <title>It's V</title>
+        <script type="text/javascript">
+
+var titleText = document.title;
+
+function titleMarquee() {
+
+ titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+ document.title = titleText;
+ setTimeout("titleMarquee()", 450);
+ }
+
+</script>
     <meta charset="utf-8">
   </head>
   <body>
