@@ -1,123 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<style>
-* {
-  box-sizing: border-box;
+<title>2 Column CSS Layout - concise design</title>
+<style type='text/css'>
+.mask{
+   position: relative;
+   overflow: hidden;
+   margin: 0px auto;
+   width: 53%;
+   background-color: #f4f4f4
 }
-
-/* Add a gray background color with some padding */
+.header{
+   float: left;
+   width: 100%;
+   background-color: #f4f4f4
+}
+.colleft{
+   position: relative;
+   width: 100%;
+   right: 30%;
+   background-color: #f4f4f4
+}
+.col1{
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 28%;
+   left: 101%;
+   background-color: #e6e6e6
+}
+.col2{
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 68%;
+   left: 3%;
+   background-color: #e6e6e6
+}
+.footer{
+   float: left;
+   width: 100%;
+   background-color: #b4caf7
+}
 body {
-  font-family: Arial;
-  padding: 100px;
-  background: #ffffff;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 50%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+   background-color: #e7e7de
 }
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h2>Dreams Not Of My Own</h2>
+<div class="mask">
+    <div class="header">
+        header
+    </div>
+    <div class="colleft">
+        <div class="col1">
+            right
+        </div>
+        <div class="col2">
+            left
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
 </div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-
 </body>
 </html>
