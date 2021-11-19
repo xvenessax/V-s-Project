@@ -1,66 +1,124 @@
-<style type="text/css">
-body {background-color:; background-image:url(http://www.mintalicious.com/graphics/layouts/relapse.jpg); background-position:Top Center; background-attachment:fixed; background-repeat:repeat-y;}
-
-table table table td.text table table div img {visibility:visible;}
-table table table td.text table table div { background-image:none;}
-div table tbody tr td a, div table tbody tr td input, div table tbody tr td font {visibility: hidden}
-
-div table tbody, div table tbody td {background-color: !important;}
-
-div div table table tr td {background-color:transparent !important;}
-
-div div table {postion: absolute; top: 1px; text-align: center;}
-
-div table tbody tr td a.navbar, div table tbody tr td form input,
-div table tbody tr td a img, div table tbody tr td div a {visibility: visible !important; display: inline !important;}
-
-table tbody td table tbody tr td.text table table, table tbody td table tbody tr td.text table
-table tbody td.text {visibility: visible;}
-table, td {padding: none !important;}
-body {background-color:transparent}
-body table {background-color:transparent}
-body table td {background-color: transparent;}
-body table table {background-color: !imporant}
-table tbody table tbody td, table tbody table tbody table {border: none;}
-table tbody table tbody table table {background-color: !important; border: none; padding: none;}
-table tbody table tbody table table td {background-color:; padding: 2px;}
-table tbody table tbody table table td.text {background-color: transparent !important;}
-table tbody td table tbody tr td.text table td.text table {border: none;}
-table tbody td table tbody tr td.text table td.text {background-color: !important; border: none;}
-table tbody td table tbody tr td.text table table {border: none;}
-table table table table table {background-color: transparent;}
-body {text-align: center !important;} .blacktext12 {visibility: hidden}
-
-.orangetext15, .lightbluetext8, .whitetext12, .nametext, .btext, .redtext, .redbtext{color:748471;font-size:16px;font-weight:bold;text-decoration:none;font-style:normal;font-family:trebuchet ms,Verdana,arial,verdana,sans-serif;}
-.redbtext.shadowed { filter: shadow( color=blue, direction=135 ); }
-body, div, p, strong, td, .text, .blacktext10, .blacktext12, a.searchlinkSmall, a.searchlinkSmall:link, a.searchlinkSmall:visited{color:9DA793;font-size:8pt;font-weight:normal;text-decoration:none;font-weight:normal;font-style:normal;font-family:trebuchet ms,Verdana,arial,verdana,sans-serif;}
-a, a:link, a:visited, a.navbar, a.navbar:link, a.navbar:visited, a.man, a.man:link, a.man:visited{color:748471;font-size:8pt;font-weight:bold;text-decoration:none;font-style:normal;font-family:trebuchet ms,Verdana,arial,verdana,sans-serif;}
-a:hover, a:active, a.navbar:hover, a.navbar:active, a.man:hover, a.man:active, a.searchlinkSmall:hover, a.searchlinkSmall:active{color:9DA793;font-size:8pt;font-weight:bold;text-decoration:underline ;font-style:normal;font-family:trebuchet ms,Verdana,arial,verdana,sans-serif;}
-
-td.text td.text table table td img {width:260px; max-width:260px; width:auto;}
-td.text td.text table table td a img {width:90px; max-width:260px; width:auto;}
-td.text td.text table table td div img {width:80px;}
-html td.text td.text table table td img {width:260px;}
-html td.text td.text table table td a img {width:90px;}
-html td.text td.text table table td div img {width:80px;}
-
-table table table td {vertical-align:top ! important;}
-span.blacktext12 {
-visibility:visible !important;
-background-color:transparent;
-background-image:url("");
-background-repeat:no-repeat;
-background-position:center center;
-font-size:0px; letter-spacing:-0.5px;
-width:435px; height:75px; display:block !important;
-border:1px;
-border-color:ffffff; }
-span.blacktext12 img {display:none;
-border-width:1;
-border-color:ffffff;
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-.img    {
-border-width:1;
-border-color:ffffff;
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 50px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Blog Name</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
