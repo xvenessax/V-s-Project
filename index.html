@@ -81,7 +81,11 @@ body, html {
    padding: 20px;
    margin-top: 20px;
 }
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 
 }
 
