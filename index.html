@@ -103,6 +103,81 @@ footer {
     padding: 0;
   }
 }
+
+
+body {
+  background: #e2e0ef;
+  font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 400px;
+}
+
+h1,h2 {
+  font-weight: normal;
+}
+
+h2 {
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+.social-links {
+  border-bottom: 1px solid #d5d3e2;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 240px;
+    li {
+      list-style: none;
+      a {
+        background-image: url( https://www.dropbox.com/s/cr6je8g0nist4sa/ic_social-sprite.svg?raw=1);
+        background-repeat: no-repeat;
+        display: block;
+        height: 16px;
+        text-indent: -9999px;
+        width: 20px;
+        &.facebook {
+          background-position: -70px 0;
+        }
+        &.twitter {
+          background-position: 0 0;
+        }
+        &.instagram {
+          background-position: -136px 0;
+        }
+        &.linkedin {
+          background-position: -342px 0;
+        }
+        &.youtube {
+          background-position: -408px 0;
+        }
+      }
+    }
+  }
+}
+
+
+.invert ul li a {
+  filter: brightness(0) invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
 
@@ -169,6 +244,27 @@ using it for my future and even career is very exciting :]
     <div class="card">
       <h2><button>About me<a href="pages/aboutme.html"></a></button></h2>
       <div class="fakeimg" style="height:100px;">Image</div>
+
+
+      <div class="wrapper">
+        <h1>Filter Effects</h1>
+        <div class="social-links">
+
+            <div class="social-links invert">
+          <h2>Invert</h2>
+          <ul>
+            <li><a class="facebook" href="#">Facebook</a></li>
+            <li><a class="twitter" href="#">Twitter</a></li>
+            <li><a class="instagram" href="#">Instagram</a></li>
+            <li><a class="linkedin" href="#">Linkedin</a></li>
+            <li><a class="youtube" href="#">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
 
     </div>
 
